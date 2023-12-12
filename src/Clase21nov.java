@@ -8,6 +8,8 @@ public class Clase21nov {
         this.nombre=nombre;
         this.edad=edad;
     }
+
+
     public int getCedula() {
         return cedula;
     }
