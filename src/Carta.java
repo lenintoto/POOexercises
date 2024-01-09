@@ -13,7 +13,7 @@ public abstract class Carta {
         this.nombre=nombre;
     }
     public abstract void jugar();
-    public void mostrarDescripcion();
+    //public void mostrarDescripcion();
 }
 class CartaNumerica extends Carta{
     private int numero;
@@ -48,10 +48,8 @@ class CartaEspecial extends Carta{
 
     }
 
-    @Override
-    public void mostrarDescripcion() {
-
-    }
+    //@Override
+    //public void mostrarDescripcion() {}
 
     public void activarEfectoEspecial(){
         try{
@@ -63,6 +61,6 @@ class CartaEspecial extends Carta{
         Scanner sc =new Scanner(System.in);
         CartaNumerica cartanum = new CartaNumerica("A",10);
         cartanum.jugar();
-        cartanum.mostrarDescripcion();
+        //cartanum.mostrarDescripcion();
     }
 }
